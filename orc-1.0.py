@@ -3,10 +3,10 @@ iluminacao = [
 
     {
         'item':'LÂMPADA FLUORESCENTE/ LED COMUM',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'ARANDELA OU SPOT COMUM/ DUPLO/ TRIPLO',
@@ -128,28 +128,19 @@ iluminacao = [
         'preco3':'48.00'
     }
 ]
-# for itens in iluminacao:
-#     print(f'Descrição {itens["item"]}')
-#     print(f'sem passagem de cabo R${itens["preco"]}')
-#     print(f'com passagem de cabo R${itens["preco1"]}')
-#     print('')
-#     print('Acima de 3 unidades')
-#     print(f'Sem passagem de cabo R${itens["preco2"]}')
-#     print(f'Com passagem de cabos R${itens["preco3"]}')
-#     print('-='*30)
-
-
 pontoUtilizacao = {}
 qdc = {}
 passagemcabo20m = {}
 soluceletrica = {}
 cond = 99
 cont = 1
+dados = list()
+orc = list()
 
 while True:
     if cond == 0:
         break
-    print('Escolha uma opção abaixo para orçar ou digite 0 para sair:\n')
+    print('Escolha uma opção abaixo para orçar ou digite 0 para encerrar o orçamento:\n')
     print('1-Iluminação')
     print('2-Pontos de ultilização (tomadas)')
     print('3-QDC (Quadros de distribuição) ')
@@ -165,20 +156,56 @@ while True:
                print(f'{k} - {v["item"]}')
             print('-=*'*30)
             esc = int(input('Digite o codigo de um serviço para iniciar o orçamento: '))
-            if esc >= len(iluminacao):
-                print('Erro esse código de serviço não existe.')
+            print()
+            if esc > len(iluminacao):
+                print(f'Erro! Não existe serviço com o codigo {esc}')
+            else:
+                print('-=*'*30)
+                print(f'codigo do serviço: {esc} ')
+                print(f'Descrição do serviço:{iluminacao[esc]["item"]}')
+                print('-='*30)
+                print(f'Valor do serviço sem passagem de cabos')
+                print('')
+                print(f'Uma unidade R${iluminacao[esc]["preco"]}')
+                print(f'Acima de 2 unidades R${iluminacao[esc]["preco2"]}')
+                print('-='*30)
+                print('Valor do serviço com passagem de cabos')
+                print('')
+                print(f'Uma unidade R${iluminacao[esc]["preco1"]}')
+                print(f'Acima de 2 unidades R${iluminacao[esc]["preco3"]}')
+                print('-=*'*30)
+                while True:
+                    op = int(input(f'Digite a quantidade de {iluminacao[esc]["item"]} a serem intalados '))
+                    while True:
+                        op2 = str(input(f'Total de {op} {iluminacao[esc]["item"]} a serem instaladas a quantidade está correta[S/N]? ')).upper()[0]
+                        if op2 in "SN":
+                            break
+                        else:
+                            print('Erro! Digite apenas sim ou não ')
+                    if op2 == "S":
+                        break
+                while True:
+                    while True:
+                        op3 = str(input('Com passagem de cabos [S/N]'))
+                        if op3 in 'SN':
+                            break
+                        else:
+                            print('Erro! Digite apenas sim ou não.')
+                    if op3 in 'SN':
+                            break
+                if op > 2 and op3 == 'N' :
+                    result = op * iluminacao[esc]["preco2"]
+                    print(result)
+
+
             while True:
-                resp = str(input('Deseja continuar em iluminação[S/N]?')).upper()[0]
-                if resp in 'SN':
+                resp = str(input('Digite sim para voltar ao menu de iluminação ou não para voltar ao menu principal[S/N]?')).upper()[0]
+                if resp in "SN":
                     break
-                print('Erro responda S OU N')
             if resp == 'N':
-                break     
+                break            
+                    
+            
 
-
-
-
-
-
-
-
+                     
+    
