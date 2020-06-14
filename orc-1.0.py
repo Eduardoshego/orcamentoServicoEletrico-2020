@@ -184,18 +184,31 @@ while True:
                             print('Erro! Digite apenas sim ou não ')
                     if op2 == "S":
                         break
+            
                 while True:
-                    while True:
-                        op3 = str(input('Com passagem de cabos [S/N]'))
-                        if op3 in 'SN':
-                            break
-                        else:
-                            print('Erro! Digite apenas sim ou não.')
+                    op3 = str(input('Com passagem de cabos [S/N]')).upper()[0]
+                        
                     if op3 in 'SN':
-                            break
+                        break
+                    else:
+                        print('Erro! Digite apenas sim ou não.')
+                  
                 if op > 2 and op3 == 'N' :
                     result = op * iluminacao[esc]["preco2"]
-                    print(result)
+                    print(iluminacao[esc]["preco2"])
+                elif op > 2 and op3 == "S":
+                    result = op * iluminacao[esc]["preco1"]
+                elif op3 == 'N':
+                    result = iluminacao[esc]["preco"]
+                else:
+                    result = iluminacao[esc]["preco3"]
+                dados.append(iluminacao[esc]["item"])
+                dados.append(op)
+                dados.append(op3)
+                dados.append(result)
+                orc.append(dados[:])
+                print(dados)
+                dados.clear()
 
 
             while True:
@@ -205,7 +218,14 @@ while True:
             if resp == 'N':
                 break            
                     
-            
+for i in orc:
+    if i[2] == 'S':
+        print('Itens com passagem de cabos')
+        print(f'{i[0]} x {i[2]}')
+    else:
+        print('Items sem passagem de cabos')
+        print(f'{i[0]} x {i[2]}')
+
 
                      
     
