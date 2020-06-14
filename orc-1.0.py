@@ -93,7 +93,7 @@ iluminacao = [
         'preco3':60.00
     },
     {
-        'item':' FOTOCÉLULA / SENSOR PRESENÇA',
+        'item':'FOTOCÉLULA / SENSOR PRESENÇA',
         'preco':40.00,
         'preco1':60.00,
         'preco2':32.00,
@@ -121,14 +121,175 @@ iluminacao = [
         'preco3':36.00
     },
     {
-        'item':' LUMINÁRIA TUBULAR - TROCA SISTEMA DE REATOR PARA LED',
+        'item':'LUMINÁRIA TUBULAR - TROCA SISTEMA DE REATOR PARA LED',
         'preco':40.00,
         'preco1':60.00,
         'preco2':32.00,
         'preco3':48.00
     }
 ]
-pontoUtilizacao = {}
+pontoUtilizacao = [
+    {
+        'item':'TOMADA SIMPLES',
+        'preco':20.00,
+        'preco1':30.00,
+        'preco2':16.00,
+        'preco3':24.00
+    },
+    {
+        'item':'TOMADA DUPLA',
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
+    },
+    {
+        'item':'TOMADA TRIPLA',
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
+    },
+    {
+        'item':'TOMADA DE PISO E/OU TELEFONE',
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
+    },
+    {
+        'item':'INSTALAÇÃO TOMADA DE SOBREPOR COM CANALETA',
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
+    },
+    {
+        'item':'CHAVE DE BÓIA SUPERIOR E INFERIOR ( EM RESIDÊNCIA )',
+        'preco':60.00,
+        'preco1':90.00,
+        'preco2':48.00,
+        'preco3':72.00
+    },
+    {
+        'item':'VENTILADOR DE TETO',
+        'preco':  90.00,
+        'preco1':135.00,
+        'preco2': 72.00,
+        'preco3':108.00
+    },
+    {
+        'item':'VENTILADOR DE PAREDE',
+        'preco':50.00,
+        'preco1':75.00,
+        'preco2':40.00,
+        'preco3':60.00
+    },
+    {
+        'item':'CHUVEIRO ELÉTRICO SIMPLES',
+        'preco':50.00,
+        'preco1':75.00,
+        'preco2':40.00,
+        'preco3':60.00
+    },
+    {
+        'item':'CHUVEIRO LUXO (Eletrônico/ Pressurizado/ Ducha)',
+        'preco':100.00,
+        'preco1':150.00,
+        'preco2':80.00,
+        'preco3':120.00
+    },
+    {
+        'item':'TORNEIRA ELÉTRICA',
+        'preco':50.00,
+        'preco1':75.00,
+        'preco2':40.00,
+        'preco3':60.00
+    },
+    {
+        'item':'CAMPAINHA ATÉ 20 MTS',
+        'preco':50.00,
+        'preco1':75.00,
+        'preco2':40.00,
+        'preco3':60.00
+    },
+    {
+        'item':'INTERFONE 1 CHAMADA',
+        'preco':90.00,
+        'preco1':135.00,
+        'preco2':72.00,
+        'preco3':108.00
+    },
+    {
+        'item':'INTERFONE 2 CHAMADAS',
+        'preco':170.00,
+        'preco1':255.00,
+        'preco2':136.00,
+        'preco3':204.00
+    },
+    {
+        'item':'INTERFONE 4 CHAMADAS',
+        'preco':300.00,
+        'preco1':450.00,
+        'preco2':240.00,
+        'preco3':360.00
+    },
+    {
+        'item':'VIDEO PORTEIRO',
+        'preco':150.00,
+        'preco1':225.00,
+        'preco2':120.00,
+        'preco3':180.00
+    },
+    {
+        'item':'CÂMERAS CFTV 1 CÂMERA',
+        'preco':80.00,
+        'preco1':120.00,
+        'preco2':64.00,
+        'preco3':96.00
+    },
+    {
+        'item':'CÂMERAS CFTV 3 CÂMERAS + DVR',
+        'preco':150.00,
+        'preco2':225.00
+    },
+    {
+        'item':'PORTAO ELETRÔNICO DESLIZANTE',
+        'preco':200.00,
+        'preco1':300.00,
+        'preco2':160.00,
+        'preco3':240.00
+    },
+    {
+        'item':'PORTAO ELETRÔNICO PIVONTANTE E / OU BASCULANTE',
+        'preco':370.00,
+        'preco1':555.00,
+        'preco2':296.00,
+        'preco3':444.00
+    },
+    {
+        'item':'BOTOEIRA para FECHADURA ELETRÔNICA ( Portão Social )',
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
+    },
+    
+    {
+    'item':'FECHADURA ELETRÔNICA ( Portão Social )',
+        'preco':120.00,
+        'preco1':180.00,
+        'preco2':96.00,
+        'preco3':144.00
+    },
+    {
+    'item':'EXAUSTOR COZINHA OU BANHEIRO',
+        'preco':170.00,
+        'preco1':255.00,
+        'preco2':136.00,
+        'preco3':204.00
+    }
+]
 qdc = {}
 passagemcabo20m = {}
 soluceletrica = {}
@@ -219,6 +380,27 @@ while True:
                     break
             if resp == 'N':
                 break 
+    elif cond == 2:
+        print('cod            Serviço')
+        print('-=*'*30)
+        for k, v in enumerate(pontoUtilizacao):
+            print(f'{k} - {v["item"]}')
+        print('')
+        print('-=*'*30)
+        print('')
+        # while True:
+        #     op = int(input('Digite um codigo para o serviço'))
+        #     if op > len(pontoUtilizacao):
+        #         print('Erro! não existe serviço com esse código')
+        #     else:
+        #         break
+        # while True:
+        #     op2 = int(input(f'Digite a quantidade de {pontoUtilizacao[op]["item"]}'))
+        #     op3 = str(input(f'Total de {op} - {pontoUtilizacao[op]["item"]} esta correta[S/N]?')).upper()[0]
+        #     if op3 == "S":
+        #         break
+       
+
 print('-='*30)
 print('')           
 print('Itens com passagem de cabos')
