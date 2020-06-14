@@ -10,122 +10,122 @@ iluminacao = [
     },
     {
         'item':'ARANDELA OU SPOT COMUM/ DUPLO/ TRIPLO',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'LÂMPADA FLUORESCENTE/ LED (TUBULAR)',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'LUSTRES SIMPLES / LUMINÁRIA',
-        'preco':'40.00',
-        'preco1':'60.00',
-        'preco2':'32.00',
-        'preco3':'48.00'
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
     },
     {
         'item':'LUSTRES GRANDES / LUMINÁRIA',
-        'preco':'90.00',
-        'preco1':'135.00',
-        'preco2':'72.00',
-        'preco3':'108.00'
+        'preco':90.00,
+        'preco1':135.00,
+        'preco2':72.00,
+        'preco3':108.00
     },
     {
         'item':'REFLETOR DE JARDIM',
-        'preco':'40.00',
-        'preco1':'60.00',
-        'preco2':'32.00',
-        'preco3':'48.00'
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
     },
     {
         'item':'REFLETOR DE POSTE COMUM',
-        'preco':'50.00',
-        'preco1':'75.00',
-        'preco2':'40.00',
-        'preco3':'60.00'
+        'preco':50.00,
+        'preco1':75.00,
+        'preco2':40.00,
+        'preco3':60.00
     },
     {
         'item':'REFLETOR DE POSTE COM LÂMPADA A VAPOR',
-        'preco':'90.00',
-        'preco1':'135.00',
-        'preco2':'72.00',
-        'preco3':'108.00'
+        'preco':90.00,
+        'preco1':135.00,
+        'preco2':72.00,
+        'preco3':108.00
     },
     {
         'item':'INTERRUPTOR SIMPLES',
-        'preco':'20.00',
-        'preco1':'30.00',
-        'preco2':'16.00',
-        'preco3':'24.00'
+        'preco':20.00,
+        'preco1':30.00,
+        'preco2':16.00,
+        'preco3':24.00
     },
     {
         'item':'INTERRUPTOR TREE-WAY/ FOUR WAY',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'INTERRUPTOR DUPLO/ BIPOLAR',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'INTERRUPTOR E TOMADA',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'REATOR DE LÂMPADA A VAPOR',
-        'preco':'50.00',
-        'preco1':'75.00',
-        'preco2':'40.00',
-        'preco3':'60.00'
+        'preco':50.00,
+        'preco1':75.00,
+        'preco2':40.00,
+        'preco3':60.00
     },
     {
         'item':' FOTOCÉLULA / SENSOR PRESENÇA',
-        'preco':'40.00',
-        'preco1':'60.00',
-        'preco2':'32.0  0',
-        'preco3':'48.00 '
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
     },
     {
         'item':'REFLETOR LED + FOTOCÉLULA ou SENSOR DE PRESENÇA',
-        'preco':'60.00',
-        'preco1':'90.00',
-        'preco2':'48.00',
-        'preco3':'72.00'
+        'preco':60.00,
+        'preco1':90.00,
+        'preco2':48.00,
+        'preco3':72.00
     },
     {
         'item':'LUMINÁRIA DE EMERGÊNCIA DE SOBREPOR',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':'LUMINÁRIA DE EMERGÊNCIA DE EMBUTIR caixinha 2x4',
-        'preco':'30.00',
-        'preco1':'45.00',
-        'preco2':'24.00',
-        'preco3':'36.00'
+        'preco':30.00,
+        'preco1':45.00,
+        'preco2':24.00,
+        'preco3':36.00
     },
     {
         'item':' LUMINÁRIA TUBULAR - TROCA SISTEMA DE REATOR PARA LED',
-        'preco':'40.00',
-        'preco1':'60.00',
-        'preco2':'32.00',
-        'preco3':'48.00'
+        'preco':40.00,
+        'preco1':60.00,
+        'preco2':32.00,
+        'preco3':48.00
     }
 ]
 pontoUtilizacao = {}
