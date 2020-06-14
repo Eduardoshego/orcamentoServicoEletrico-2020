@@ -136,6 +136,7 @@ cond = 99
 cont = 1
 dados = list()
 orc = list()
+total = 0
 
 while True:
     if cond == 0:
@@ -160,23 +161,23 @@ while True:
             if esc > len(iluminacao):
                 print(f'Erro! Não existe serviço com o codigo {esc}')
             else:
-                print('-=*'*30)
+                print('-='*30)
                 print(f'codigo do serviço: {esc} ')
                 print(f'Descrição do serviço:{iluminacao[esc]["item"]}')
                 print('-='*30)
-                print(f'Valor do serviço sem passagem de cabos')
                 print('')
-                print(f'Uma unidade R${iluminacao[esc]["preco"]}')
-                print(f'Acima de 2 unidades R${iluminacao[esc]["preco2"]}')
+                print(f'Valor de 1 unidade sem passagem de cabos R${iluminacao[esc]["preco"]:.2f}')
+                print(f'Valor de 3 unidades sem passagem de cabos R${iluminacao[esc]["preco2"]:.2f}')
+                print(f'Valor de 1 unidade com passagem de cabos R${iluminacao[esc]["preco1"]:.2f}')
+                print(f'Valor de 3 unidades com passagem de cabosR${iluminacao[esc]["preco3"]:.2f}')
+                print('')
                 print('-='*30)
-                print('Valor do serviço com passagem de cabos')
                 print('')
-                print(f'Uma unidade R${iluminacao[esc]["preco1"]}')
-                print(f'Acima de 2 unidades R${iluminacao[esc]["preco3"]}')
-                print('-=*'*30)
                 while True:
+                    print('')
                     op = int(input(f'Digite a quantidade de {iluminacao[esc]["item"]} a serem intalados '))
                     while True:
+                        print('')
                         op2 = str(input(f'Total de {op} {iluminacao[esc]["item"]} a serem instaladas a quantidade está correta[S/N]? ')).upper()[0]
                         if op2 in "SN":
                             break
@@ -186,6 +187,7 @@ while True:
                         break
             
                 while True:
+                    print('')
                     op3 = str(input('Com passagem de cabos [S/N]')).upper()[0]
                         
                     if op3 in 'SN':
@@ -207,24 +209,41 @@ while True:
                 dados.append(op3)
                 dados.append(result)
                 orc.append(dados[:])
-                print(dados)
                 dados.clear()
 
 
             while True:
-                resp = str(input('Digite sim para voltar ao menu de iluminação ou não para voltar ao menu principal[S/N]?')).upper()[0]
+                print('')
+                resp = str(input('Deseja continuar em iluminação[S/N]?')).upper()[0]
                 if resp in "SN":
                     break
             if resp == 'N':
-                break            
-                    
+                break 
+print('-='*30)
+print('')           
+print('Itens com passagem de cabos')
+print('-'*60)
+print('')                   
 for i in orc:
     if i[2] == 'S':
-        print('Itens com passagem de cabos')
-        print(f'{i[0]} x {i[2]}')
-    else:
-        print('Items sem passagem de cabos')
-        print(f'{i[0]} x {i[2]}')
+        print(f'{i[0]} x {i[1]} = {i[3]}')
+        total += i[3]
+print('-'*60)
+print('')
+print('Itens sem passagem de cabos')
+print('-'*60)
+print('')
+for i in orc:
+    if i[2] == 'N':
+        print(f'{i[0]} x {i[1]} = {i[3]}')
+        total += i[3]
+print('-'*60)
+print('')
+print('-='*30)
+print('')
+print(f'Valor total da mão de obra R${total:.2f}')
+print('')
+print('-='*30)
 
 
                      
