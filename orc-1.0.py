@@ -670,6 +670,7 @@ while True:
         elif c == 5:
             mostrarLista(soluceletrica,msg)
 mostrarOrc()
+mostrarOrc()
 
 
     
