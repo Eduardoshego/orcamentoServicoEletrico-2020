@@ -1,9 +1,7 @@
-from uteis import source
-from uteis import interface
-from uteis import controller
+from uteis import interface,source,controller
 
 interface.menu(source.servicos)
-controller.escolha()
+controller.escolhaCategoria()
 
 
 

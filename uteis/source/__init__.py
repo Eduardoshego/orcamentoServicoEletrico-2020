@@ -445,14 +445,14 @@ passagemcabo20m = [
 ]
 soluceletrica = [
     {
-        'item':'DE CURTO CIRCUITO MONOFÁSICO',
+        'item':'CURTO CIRCUITO MONOFÁSICO',
         'preco':90.00,
         'preco1':135.00,
         'preco2':72.00,
         'preco3':108.00
     },
     {
-        'item':'DE CURTO CIRCUITO BIFÁSICO',
+        'item':'CURTO CIRCUITO BIFÁSICO',
         'preco':110.00,
         'preco1':165.00,
         'preco2':88.00,
