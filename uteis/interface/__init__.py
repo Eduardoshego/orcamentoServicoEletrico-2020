@@ -1,7 +1,7 @@
 def menu(listas):
     print('\033[32m*=\033[m'*30)
     print('')
-    print ('\033[33mcode                    Serviços\033[m')
+    print ('\033[33mcode                    Categoria\033[m')
     print('')
     print('\033[32m*=\033[m'*30)
     print('')
@@ -47,6 +47,11 @@ def detalhaItem(lista, x):
     print('+='*15)
     print('')
     print('\033[32m*=\033[m'*30)
+    
+    
+def detalhaTabela(lista):
+    menu(source.servicos)
+    
 
     
     

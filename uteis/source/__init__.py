@@ -477,3 +477,5 @@ servicos = [
     'Encerrar orçamento e sair do programa'
     ]
 orc = list()
+
+lista = [iluminacao,pontoUtilizacao,qdc,passagemcabo20m,soluceletrica,]

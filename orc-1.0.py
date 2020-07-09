@@ -8,15 +8,7 @@ controller.escolhaCategoria()
 
 
 
-# def detalhaPreco(lista):
-#     menuCima()
-#     print('COD    Tabela serviços')
-#     menuBaixo()
-#     for c in range(1,len(lista)-1):
-#         print(f'{c}-{lista[c]}')
-#     separaBaixo()
-#     s = int(input('Digite o código do serviço para detalhar preços'))
-#     return s
+
     
 # def mostrarLista(lista,msg):
 #     menuCima()
