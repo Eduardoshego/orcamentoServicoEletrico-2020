@@ -9,6 +9,7 @@ def menu(listas):
         print(f'  \033[31m{c+1}\033[m - \033[34m{listas[c]}\033[m')
     print('')
     print('\033[32m*=\033[m'*30)
+    
 
     
 def menu2(listas,txt):
@@ -48,9 +49,6 @@ def detalhaItem(lista, x):
     print('')
     print('\033[32m*=\033[m'*30)
     
-    
-def detalhaTabela(lista):
-    menu(source.servicos)
     
 
     
